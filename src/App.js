@@ -1,7 +1,12 @@
 import React from "react";
-import { logo } from "./assets/main_logo.png";
+import logo from "./assets/main_logo.png";
+import "./App.scss";
 function App() {
-  return <div>{logo}</div>;
+  return (
+    <div>
+      <img className="logo" src={logo} />
+    </div>
+  );
 }
 
 export default App;
