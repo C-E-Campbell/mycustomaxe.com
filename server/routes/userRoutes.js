@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const userCTRL = require("../controllers/usersCTRL");
+const userCTRL = require("../controllers/userCTRL");
 const { registerAcct, login, deleteAcct } = userCTRL;
 
 router
