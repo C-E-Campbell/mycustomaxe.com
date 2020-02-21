@@ -1,12 +1,13 @@
 const express = require("express");
 const router = express.Router();
 const userCTRL = require("../controllers/usersCTRL");
-const { register, login } = userCTRL;
+const { registerAcct, login, deleteAcct } = userCTRL;
 
 router
   .route("/")
   .get(login)
-  .post(register);
+  .delete(deleteAcct)
+  .post(registerAcct);
 
 //
 
