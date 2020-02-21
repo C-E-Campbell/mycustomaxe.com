@@ -1,15 +1,17 @@
 require("dotenv").config();
+const { PORT, CONNECTION_STRING } = process.env;
 const express = require("express");
 const app = express();
 const massive = require("massive");
-console.log(process.env);
-// massive(CONNECTION_STRING).then(db => {
-//   app.set("db", db);
-//   console.log("db connected");
-// });
+const userRouter = require("./routes/userRoutes");
+
+massive(CONNECTION_STRING).then(db => {
+  app.set("db", db);
+  console.log("db connected");
+});
 
 app.use(express.json());
 
-app.get("/", (req, res) => res.send("Hello World!"));
+app.use("/api/v1/users", userRouter);
 
-app.listen(5556, () => console.log(`Listening on 5556`));
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
