@@ -2,4 +2,3 @@ brand colors
 Primary color: #141414
 Secondary Color: #fc6161
 tertiary color; #420606
-font Latinotype - TrendRh Sans One
