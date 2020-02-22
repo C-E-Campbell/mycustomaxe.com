@@ -1,9 +1,7 @@
-CREATE TABLE users(
-    id SERIAL PRIMARY KEY,
+CREATE TABLE users( id SERIAL PRIMARY Key, 
     email VARCHAR UNIQUE NOT NULL,
     password VARCHAR NOT NULL,
-    isAdmin BOOLEAN,
+    isAdmin BOOLEAN DEFAULT FALSE,
     name VARCHAR UNIQUE NOT NULL);
 
-INSERT INTO users(email, password, isAdmin)
-VALUES('test@gtest.com', 'test', true, 'test');
+-- admins will be added manually
