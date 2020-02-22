@@ -9,6 +9,4 @@ router
   .delete(deleteAcct)
   .post(registerAcct);
 
-//
-
 module.exports = router;
