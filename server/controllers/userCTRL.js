@@ -4,7 +4,6 @@ module.exports = {
     const { email, password, name } = req.body;
     try {
       const register = await db.register_user(email, password, name);
-      console.log(register);
       res.status(200).json({ status: "succesful", message: register });
     } catch (err) {
       console.log("From account registration" + err);
