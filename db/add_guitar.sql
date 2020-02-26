@@ -1,6 +1,4 @@
-INSERT INTO guitars(brand, pickups, body, neck, tuners, electronics, misc, creator);
-
-
+INSERT INTO guitars(brand, pickups, body, neck, tuners, electronics, misc, creator)
 VALUES($1,
        $2,
        $3,
@@ -9,3 +7,4 @@ VALUES($1,
        $6,
        $7,
        $8);
+
