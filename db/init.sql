@@ -15,4 +15,4 @@ tuners VARCHAR,
 electronics VARCHAR,
 misc VARCHAR,
 creator VARCHAR
-)
+);

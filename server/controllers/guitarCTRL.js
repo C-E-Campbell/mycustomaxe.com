@@ -24,6 +24,7 @@ module.exports = {
       );
       res.status(200).json({ status: "successful", message: "Guitar added" });
     } catch (err) {
+      console.log(err);
       res.status(500).json({ status: "failed", message: err });
     }
   }
