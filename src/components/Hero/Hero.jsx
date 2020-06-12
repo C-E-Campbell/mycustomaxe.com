@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.scss';
+import video from '../../assets/heroVideo.mp4';
 import { hero_img } from '../../assets/topImg.jpg';
 export default function Hero() {
   return (
