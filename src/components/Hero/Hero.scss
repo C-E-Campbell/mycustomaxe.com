@@ -5,3 +5,37 @@
   height: 80vh;
   width: 100vw;
 }
+
+.Hero-Text {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #fff;
+  position: relative;
+  top: 55%;
+  left: 40%;
+  transform: translate(-10%, -80%);
+  margin-bottom: 0;
+
+  a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fc6161;
+    padding: 8px 16px;
+    border-radius: 4px;
+
+    &:hover {
+      background-color: darken($color: #fc6161, $amount: 5%);
+    }
+  }
+
+  span {
+    color: #fc6161;
+  }
+
+  h2 {
+    color: #fff;
+    padding: 0;
+    margin: 0px;
+  }
+}
