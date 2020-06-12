@@ -1,10 +1,11 @@
-import React from "react";
-import logo from "./assets/main_logo.png";
-import "./App.scss";
+import React from 'react';
+import logo from './assets/main_logo.png';
+import Home from './pages/Home.jsx';
+import './App.scss';
 function App() {
   return (
     <div>
-      <img className="logo" src={logo} />
+      <Home />
     </div>
   );
 }
