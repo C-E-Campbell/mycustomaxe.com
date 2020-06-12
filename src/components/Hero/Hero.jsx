@@ -7,10 +7,10 @@ export default function Hero() {
     <div className="Hero">
       <div className="Hero-Text">
         <h2>
-          You built it<span>.</span>
+          You Built It<span>.</span>
         </h2>
         <h2>
-          Now show it<span>.</span>
+          Now Show It<span>.</span>
         </h2>
 
         <a href="#">View Custom Builds Now</a>

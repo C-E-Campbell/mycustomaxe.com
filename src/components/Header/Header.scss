@@ -24,14 +24,26 @@
 
   a {
     text-decoration: none;
-    color: #333;
 
     padding: 8px 16px;
     border-radius: 4px;
+    border: 1px solid #fc6161;
+  }
+}
+.register_btn {
+  color: #333;
+  &:hover {
+    background-color: #fc6161;
+    color: #fff;
+  }
+}
 
-    &:hover {
-      background-color: #fc6161;
-      color: #fff;
-    }
+.login_btn {
+  background-color: #fc6161;
+  color: #fff;
+  &:hover {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #fc6161;
   }
 }
