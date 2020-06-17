@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.scss';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import { hero_img } from '../../assets/topImg.jpg';
 export default function Hero() {
   return (
     <div className="Hero">
@@ -13,7 +13,7 @@ export default function Hero() {
           Now Show It<span>.</span>
         </h2>
 
-        <a href="#">View Custom Builds Now</a>
+        <Link to="/Dashboard">View Custom Builds Now</Link>
       </div>
     </div>
   );
